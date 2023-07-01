@@ -1,0 +1,5 @@
+carnivore(lion).
+carnivore(bhoomiraj).
+
+
+

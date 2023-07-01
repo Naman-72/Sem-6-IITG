@@ -1,0 +1,56 @@
+void generateDOTHelper(wstringstream& ss, wstring nodePrefix, wstring edgePrefix, int parentId, TrieNode* node, int& nodeCount) {
+    for (int i = 0; i < Alphabets; i++) {
+        if (node->children[i] != NULL) {
+            int childNodeId = nodeCount++;
+            wchar_t label = L'\u0900' + i;
+            ss << "  " << nodePrefix << childNodeId << L" [label=\"" << label << L"\" shape=circle];\n";
+            ss << "  " << nodePrefix << parentId << " -> " << nodePrefix << childNodeId << " [label=\"\"];\n";
+        if (node->children[i]->is_end_of_word) {
+            ss << "  " << nodePrefix << childNodeId << " [shape=doublecircle];\n";
+        }
+        generateDOTHelper(ss, nodePrefix, edgePrefix, childNodeId, node->children[i], nodeCount);
+    }
+}
+}
+
+// Generate a DOT file for the trie
+wstring generateDOT(TrieNode* root) {
+    wstringstream ss;
+    ss << "digraph Trie {\n";
+    ss << "  node [shape=circle];\n";
+    ss << "  edge [dir=none];\n";
+
+    int nodeCount = 0;
+    wstring nodePrefix = L"node";
+    wstring edgePrefix = L"edge";
+    int startNodeId = nodeCount++;
+    ss << "  " << nodePrefix << startNodeId << " [label=\"\"];\n";
+
+    for (int i = 0; i < Alphabets; i++) {
+        if (root->children[i] != NULL) {
+            int childNodeId = nodeCount++;
+            wchar_t label = L'\u0900' + i;
+            ss << "  " << nodePrefix << childNodeId << L" [label=\"" << label << L"\" shape=circle];\n";
+            ss << "  " << nodePrefix << startNodeId << " -> " << nodePrefix << childNodeId << " [label=\"\"];\n";
+            generateDOTHelper(ss, nodePrefix, edgePrefix, childNodeId, root->children[i], nodeCount);
+        }
+    }
+    ss << "}\n";
+    return ss.str();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

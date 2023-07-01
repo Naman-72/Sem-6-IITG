@@ -1,0 +1,33 @@
+In preparation for your upcoming assignment-5 lab, we are providing you with a list of topics that you should be familiar with. These topics will be important for you to understand in order to complete the lab evaluation successfully. Here are the topics you should focus on:
+
+
+// Trie Data Structure along with reading Hindi characters.
+// code done
+
+// Binary Search Tree
+// code done 
+
+// AVL Tree 
+// same as binary tree but after insertion u will have to check balancefactor along traversal in each node 
+// 
+
+// How to make Data Structures (like linked list, trees) persistent?
+
+
+// Binomial Heap
+// code done 
+
+// Van Emde Boas Tree (VEB Tree)
+//  seeen code
+
+// Synchronization Problems using Semaphores and Threads
+
+// Graph Algorithms ( Such as Graph Traversals, Cut vertex, Vertex cover, Bridges, etc)
+// code done 
+
+// Merge Sort Tree
+// done 
+NOTE: To visualize the Graph you should have an understanding of the Graphviz Tool.
+We recommend that you start by reviewing the basics of each of these topics. Once you have a good understanding of the fundamentals, you can move on to more advanced concepts.
+Each student will be assigned any one of the above topics and questions related to the topic will be provided in the lab itself.
+We wish you the best of luck on your upcoming lab assignment!

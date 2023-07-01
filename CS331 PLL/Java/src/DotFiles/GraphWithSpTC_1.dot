@@ -1,0 +1,31 @@
+strict graph _shortestPath{
+	nodesep = 0.7
+	layout = neato
+	scale = 1.4
+	node[shape = circle]
+	label = "Shortest path"
+	subgraph cluster_1{
+		margin = 15
+		dest[shape = plaintext,width = 0.55]
+		src[shape = plaintext,width = 0.55]
+		2[color = gold,style = filled]
+		5[color = gold,style = filled]
+		0--1[label = "4"]
+		0--7[label = "8"]
+		1--7[label = "11"]
+		7--6[label = "1"]
+		6--8[label = "6"]
+		7--8[label = "7"]
+		8--2[label = "2"]
+		1--2[label = "8"]
+		2--3[label = "7"]
+		2--5[label = "4"]
+		3--5[label = "14"]
+		6--5[label = "2"]
+		5--4[label = "10"]
+		3--4[label = "9"]
+		2--5[label = "4",color = gold]
+		2--src[dir = forward,color = red]
+		5--dest[dir = forward,color = red]
+	}
+}

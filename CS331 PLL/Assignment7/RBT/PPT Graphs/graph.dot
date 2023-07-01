@@ -1,0 +1,14 @@
+digraph {
+    
+    root [label="x" style = filled fillcolor = red fontcolor = white]
+    root -> {a b}
+    a [ style = filled color = black fontcolor = white]
+    b [ style = filled color = black fontcolor = white]
+    a-> {c d}
+    b-> {e f}
+    c [ shape = square style = filled color = black fontcolor = white label = "NIL"]
+    d [ shape = square style = filled color = black fontcolor = white label = "NIL"]
+    e [ shape = square style = filled color = black fontcolor = white label = "NIL"]
+    f [ shape = square style = filled color = black fontcolor = white label = "NIL"]
+
+}

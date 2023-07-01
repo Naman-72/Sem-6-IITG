@@ -1,0 +1,37 @@
+digraph adj{
+rankdir=LR
+nodesep=0
+	nodesep=.05;
+	rankdir=LR;
+	node [shape=record, width=.1, height=.1 ];
+	node0 [label = " <f0> 0 | <f1> 1 | <f2> 2 | <f3> 3 | <f4> 4 ", height=2.0 ];
+	node [width = 1.5];
+	node1 [label = "{<p> 1 | 3 | <n> }"];
+	node0:f0 -> node1:p;
+	node2 [label = "{<p> 3 | 8 | <n> }"];
+	node1:n -> node2:p;
+	node3 [label = "{<p> 4 | 7 | <n> }"];
+	node2:n -> node3:p;
+	node4 [label = "{<p> 0 | 3 | <n> }"];
+	node0:f1 -> node4:p;
+	node5 [label = "{<p> 2 | 1 | <n> }"];
+	node4:n -> node5:p;
+	node6 [label = "{<p> 3 | 4 | <n> }"];
+	node5:n -> node6:p;
+	node7 [label = "{<p> 1 | 1 | <n> }"];
+	node0:f2 -> node7:p;
+	node8 [label = "{<p> 3 | 2 | <n> }"];
+	node7:n -> node8:p;
+	node9 [label = "{<p> 0 | 8 | <n> }"];
+	node0:f3 -> node9:p;
+	node10 [label = "{<p> 1 | 4 | <n> }"];
+	node9:n -> node10:p;
+	node11 [label = "{<p> 2 | 2 | <n> }"];
+	node10:n -> node11:p;
+	node12 [label = "{<p> 4 | 3 | <n> }"];
+	node11:n -> node12:p;
+	node13 [label = "{<p> 0 | 7 | <n> }"];
+	node0:f4 -> node13:p;
+	node14 [label = "{<p> 3 | 3 | <n> }"];
+	node13:n -> node14:p;
+}

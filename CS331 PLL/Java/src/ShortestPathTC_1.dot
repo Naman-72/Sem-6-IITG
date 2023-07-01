@@ -1,0 +1,12 @@
+graph _shortestPath{
+	nodesep = 0.7
+	layout = circo
+	node[color = gold]
+	edge[color = red]
+	label = "Shortest path"
+	subgraph cluster_1{
+		margin = 15
+		2--3[label = "2"]
+		3--4[label = "3"]
+	}
+}

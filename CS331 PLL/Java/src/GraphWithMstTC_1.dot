@@ -1,0 +1,33 @@
+graph GraphWithMst{
+	nodesep = 0.7
+	layout = neato
+	scale = 1.4
+	node[shape = circle]
+	label = "Graph With Mst"
+	subgraph cluster_1{
+		margin = 15
+		node0[label = "0",shape = circle]
+		node1[label = "1",shape = circle]
+		node2[label = "2",shape = circle]
+		node3[label = "3",shape = circle]
+		node4[label = "4",shape = circle]
+		node5[label = "5",shape = circle]
+		node6[label = "6",shape = circle]
+		node7[label = "7",shape = circle]
+		node8[label = "8",shape = circle]
+		node7--node6[label = "1",color = red]
+		node6--node5[label = "2",color = red]
+		node8--node2[label = "2",color = red]
+		node0--node1[label = "4",color = red]
+		node2--node5[label = "4",color = red]
+		node2--node3[label = "7",color = red]
+		node0--node7[label = "8",color = red]
+		node3--node4[label = "9",color = red]
+		node6--node8[label = "6"]
+		node7--node8[label = "7"]
+		node1--node2[label = "8"]
+		node5--node4[label = "10"]
+		node1--node7[label = "11"]
+		node3--node5[label = "14"]
+	}
+}

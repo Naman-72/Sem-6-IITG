@@ -1,0 +1,6 @@
+digraph G{
+node  [style = filled, fillcolor = black, shape = square , fontcolor = white]
+"g"->"p";
+"p"->"x"
+
+}

@@ -1,0 +1,5 @@
+graph A{
+node [color = yellow];
+3--2[label = 2;color = red];
+4--3[label = 3;color = red];
+}

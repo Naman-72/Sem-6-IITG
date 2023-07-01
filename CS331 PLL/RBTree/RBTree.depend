@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1635147737 source:c:\users\dell\desktop\rbtree\main.cpp
+	<iostream>
+	"RBNode.h"
+	"RBTree.h"
+
+1634548419 c:\users\dell\desktop\rbtree\rbnode.h
+
+1634548670 source:c:\users\dell\desktop\rbtree\rbnode.cpp
+	<iostream>
+	"RBNode.h"
+
+1635149298 c:\users\dell\desktop\rbtree\rbtree.h
+	<iostream>
+	"RBNode.h"
+
+1635157190 source:c:\users\dell\desktop\rbtree\rbtree.cpp
+	"RBTree.h"
+	"RBNode.h"
+
