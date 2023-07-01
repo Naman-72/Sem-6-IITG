@@ -1,0 +1,43 @@
+Our primary intention is to refer  to software systems rather than  
+any hardware so when we are talking about  interactive systems or human computer interfaces  
+
+
+> code testing bug free
+> emperical evaluation : ensuring product is acceptable to end users 
+ensure usability of the product 
+
+
+USABILITY : explicit measure to judge our  design if we have taken care of the human factors  
+it is meant to be used by lay persons  who are not technology experts  
+they are not interested actually to learn  about the technology behind the working of  
+The system what they are interested in is  basically to get their work done for example  
+
+> END USER 
+: BEHAVIOURAL DATA : CONTROL EXPT 
+ENTIRE PROCESS IS CALLED :
+EMPERICAL RESEARCH :  
+
+>> NOT EASY 
+END USR : MAY NOT RELIABLE 
+MENTAL STATE ETC 
+
+WE WANT RELIABLE DATA : 
+STAGES :
+4 
+
+first stage is identification of research  questions :
+ANSWER TO FEW QUE
+WHAT KIND OF QUE SO FIND GOOD QUE
+FRAME QUE : GOOD 
+
+second stage is determinism variables  :
+WE HAVE TO IDENTIFY VARIABLES IN STUDY 
+
+
+COME UP  WITH PROPER DESIGN 
+
+
+third stage is design of experiment and 
+the fourth  and final stage is analysis of empirical data  
+
+

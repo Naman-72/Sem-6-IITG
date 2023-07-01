@@ -1,0 +1,24 @@
+google cardboard : older version 
+//
+2019 version 
+lts version
+
+
+Project :
+/License
+
+File : Build Settings : 
+
+Hirarchy window 
+Imagine Movie Set 
+game view 
+
+save the scenes in scenes folder 
+organize folders
+scenes, materials, etc
+
+360 images
+pastig 360 image 
+
+
+first thing : interface
