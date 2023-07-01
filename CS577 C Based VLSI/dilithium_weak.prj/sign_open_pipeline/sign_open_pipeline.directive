@@ -1,0 +1,119 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="keccak_absorb" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="keccak_absorb" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="keccak_absorb" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="keccak_squeezeblocks" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="keccak_squeezeblocks" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="keccak_squeezeblocks" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="shake128_absorb" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="shake128_absorb" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="shake128_absorb" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="shake128_squeezeblocks" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="shake128_squeezeblocks" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="shake128_squeezeblocks" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="shake256_absorb" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="shake256_absorb" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="shake256_absorb" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="shake256_squeezeblocks" label="" functionLabel="">
+            <pragma name="ALLOCATION">
+                <option name="instances" value="shake256_squeezeblocks" positionalBoolean="4"/>
+                <option name="limit" value="1"/>
+                <option name="function" value="" positionalBoolean="type"/>
+            </pragma>
+        </directive>
+        <directive functionName="shake256_squeezeblocks" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="store64" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="load64" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="load64" label="load64_label38" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="store64" label="store64_label39" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="KeccakF1600_StatePermute" label="KeccakF1600_StatePermute_label1" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="poly_add" label="poly_add_label25" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="poly_sub" label="poly_sub_label33" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="poly_shiftl" label="poly_shiftl_label31" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="poly_uniform" label="poly_uniform_label40" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="rej_eta" label="rej_eta_label41" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="rej_gamma1m1" label="rej_gamma1m1_label42" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyeta_pack" label="polyeta_pack_label34" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyeta_unpack" label="polyeta_unpack_label35" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyt1_pack" label="polyt1_pack_label43" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyt0_pack" label="polyt0_pack_label45" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyt0_unpack" label="polyt0_unpack_label46" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyz_pack" label="polyz_pack_label47" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="polyw1_pack" label="polyw1_pack_label26" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

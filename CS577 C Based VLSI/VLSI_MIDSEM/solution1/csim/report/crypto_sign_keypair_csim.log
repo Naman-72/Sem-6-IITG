@@ -1,0 +1,145 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../dilithium3/test/cpucycles.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:01:37 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+apcc_db/cpucycles.c: In function 'aesl_internal_cpucycles':
+apcc_db/cpucycles.c:283:17: error: expected '(' before ')' token
+         :"{rdx}");
+                 ^
+INFO: [APCC 202-3] Tmp directory is apcc_db
+   Compiling(apcc) ../../../../dilithium3/test/speed_print.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:01:44 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/test/test_dilithium.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:01:51 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/test/test_mul.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:01:57 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/test/test_speed.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:03 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+apcc_db/test_speed.c: In function 'aesl_internal_cpucycles':
+apcc_db/test_speed.c:1920:17: error: expected '(' before ')' token
+         :"{rdx}");
+                 ^
+INFO: [APCC 202-3] Tmp directory is apcc_db
+   Compiling(apcc) ../../../../dilithium3/test/test_vectors.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:09 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/PQCgenKAT_sign.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:16 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/aes.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:23 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/aes256ctr.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:29 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/fips202.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:36 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/ntt.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:45 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/packing.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:51 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/poly.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:02:57 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/polyvec.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:04 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/randombytes.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:11 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/reduce.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:17 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/rng.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:24 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/rounding.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:30 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/sign.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:36 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/symmetric-aes.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:43 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../dilithium3/symmetric-shake.c in debug mode
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Dell' on host 'naman' (Windows NT_amd64 version 6.2) on Sun Feb 19 01:03:50 +0530 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Makefile.rules:401: recipe for target 'csim.exe' failed
+ERROR: [APCC 202-3] Gcc Compile failed: 
+ERROR: [APCC 202-1] APCC failed.
+ERROR: [APCC 202-3] Gcc Compile failed: 
+ERROR: [APCC 202-1] APCC failed.
+g++.exe: error: obj/cpucycles.o: No such file or directory
+g++.exe: error: obj/test_speed.o: No such file or directory
+make: *** [csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

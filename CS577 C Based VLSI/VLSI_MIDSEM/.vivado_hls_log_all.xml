@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'precomp.gp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="VLSI_MIDSEM" solutionName="solution1" date="2023-02-19T19:59:24.350+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'Makefile'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="VLSI_MIDSEM" solutionName="solution1" date="2023-02-19T19:59:24.334+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="VLSI_MIDSEM" solutionName="solution1" date="2023-02-19T19:59:23.141+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Xilinx/Vivado/2019.2/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="VLSI_MIDSEM" solutionName="solution1" date="2023-02-19T19:59:19.904+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,941 @@
+INFO-FLOW: Workspace C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1 opened at Sun Feb 19 19:59:19 +0530 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Xilinx/Vivado/2019.2/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/dsp48e1.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.131 sec.
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.244 sec.
+Command     ap_source done; 0.245 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7vx485t-ffg1157-1 
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data single -quiet 
+Command       ap_part_info done; 2.328 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       add_library xilinx/virtex7/virtex7:xc7vx485t:-ffg1157:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/dsp48e1.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.16 sec.
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.257 sec.
+Command         ap_source done; 0.257 sec.
+Execute         ap_part_info -data single -name xc7vx485t-ffg1157-1 
+Execute         ap_part_info -name xc7vx485t-ffg1157-1 -data resources 
+Execute         ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute         ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 75900} {LUT 303600} {FF 607200} {DSP48E 2800} {BRAM 2060} {URAM 0} 
+Execute         ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.464 sec.
+Execute       add_library xilinx/virtex7/virtex7_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.048 sec.
+Execute     ap_part_info -data single -name xc7vx485t-ffg1157-1 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data resources 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 75900} {LUT 303600} {FF 607200} {DSP48E 2800} {BRAM 2060} {URAM 0} 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 3.601 sec.
+Execute   set_part xc7vx485t-ffg1157-1 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data single -quiet 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute     add_library xilinx/virtex7/virtex7:xc7vx485t:-ffg1157:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/dsp48e1.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.127 sec.
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.192 sec.
+Command       ap_source done; 0.194 sec.
+Execute       ap_part_info -data single -name xc7vx485t-ffg1157-1 
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data resources 
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 75900} {LUT 303600} {FF 607200} {DSP48E 2800} {BRAM 2060} {URAM 0} 
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Command     add_library done; 0.399 sec.
+Execute     add_library xilinx/virtex7/virtex7_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/virtex7/virtex7_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.617 sec.
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Skipped source file 'Makefile'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'precomp.gp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/PQCgenKAT_sign.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/PQCgenKAT_sign.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/PQCgenKAT_sign.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/PQCgenKAT_sign.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/PQCgenKAT_sign.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c
+Command       clang done; 2.555 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.663 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.892 sec.
+INFO-FLOW: Done: GCC PP time: 5.1 seconds per iteration
+Execute       source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.337 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.331 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.PQCgenKAT_sign.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.PQCgenKAT_sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.PQCgenKAT_sign.pp.0.c.err.log 
+Command       ap_eval done; 0.419 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.PQCgenKAT_sign.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.PQCgenKAT_sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.PQCgenKAT_sign.pp.0.c.err.log 
+Command         ap_eval done; 0.325 sec.
+Execute         source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.PQCgenKAT_sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.PQCgenKAT_sign.pp.0.c.err.log 
+Command         ap_eval done; 0.445 sec.
+Command       tidy_31 done; 0.824 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.6 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.354 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.bc
+Command       clang done; 2.042 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/aes.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/aes.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/aes.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/aes.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/aes.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c
+Command       clang done; 1.841 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.33 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.953 sec.
+INFO-FLOW: Done: GCC PP time: 4.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.322 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.323 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes.pp.0.c.err.log 
+Command       ap_eval done; 0.201 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes.pp.0.c.err.log 
+Command         ap_eval done; 0.355 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.aes.pp.0.c.err.log 
+Command         ap_eval done; 0.157 sec.
+Command       tidy_31 done; 0.528 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.346 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.bc
+Command       clang done; 2.147 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/aes256ctr.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/aes256ctr.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/aes256ctr.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/aes256ctr.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/aes256ctr.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c
+Command       clang done; 1.972 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.336 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.813 sec.
+INFO-FLOW: Done: GCC PP time: 4.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.279 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.344 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes256ctr.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes256ctr.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.aes256ctr.pp.0.c.err.log 
+Command       ap_eval done; 0.22 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes256ctr.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes256ctr.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.aes256ctr.pp.0.c.err.log 
+Command         ap_eval done; 0.35 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.aes256ctr.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.aes256ctr.pp.0.c.err.log 
+Command         ap_eval done; 0.186 sec.
+Command       tidy_31 done; 0.583 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.295 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.bc
+Command       clang done; 2.061 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/fips202.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/fips202.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/fips202.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/fips202.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/fips202.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c
+Command       clang done; 2.01 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.322 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.049 sec.
+INFO-FLOW: Done: GCC PP time: 4.4 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.32 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.289 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.fips202.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.fips202.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.fips202.pp.0.c.err.log 
+Command       ap_eval done; 0.221 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.fips202.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.fips202.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.fips202.pp.0.c.err.log 
+Command         ap_eval done; 0.348 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.fips202.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.fips202.pp.0.c.err.log 
+Command         ap_eval done; 0.191 sec.
+Command       tidy_31 done; 0.642 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.318 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.bc
+Command       clang done; 1.889 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/ntt.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/ntt.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/ntt.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/ntt.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/ntt.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c
+Command       clang done; 1.98 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.302 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.016 sec.
+INFO-FLOW: Done: GCC PP time: 4.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.298 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.295 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.ntt.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.ntt.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.ntt.pp.0.c.err.log 
+Command       ap_eval done; 0.192 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.ntt.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.ntt.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.ntt.pp.0.c.err.log 
+Command         ap_eval done; 0.325 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.ntt.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.ntt.pp.0.c.err.log 
+Command         ap_eval done; 0.185 sec.
+Command       tidy_31 done; 0.54 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.303 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.bc
+Command       clang done; 2.295 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/packing.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/packing.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/packing.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/packing.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/packing.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c
+Command       clang done; 1.843 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.3 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.918 sec.
+INFO-FLOW: Done: GCC PP time: 4.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.292 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.287 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.packing.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.packing.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.packing.pp.0.c.err.log 
+Command       ap_eval done; 0.211 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.packing.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.packing.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.packing.pp.0.c.err.log 
+Command         ap_eval done; 0.3 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.packing.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.packing.pp.0.c.err.log 
+Command         ap_eval done; 0.172 sec.
+Command       tidy_31 done; 0.541 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.283 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.bc
+Command       clang done; 2.227 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/poly.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/poly.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/poly.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/poly.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/poly.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c
+Command       clang done; 1.816 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.323 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.9 sec.
+INFO-FLOW: Done: GCC PP time: 4 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.294 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.297 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.poly.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.poly.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.poly.pp.0.c.err.log 
+Command       ap_eval done; 0.222 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.poly.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.poly.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.poly.pp.0.c.err.log 
+Command         ap_eval done; 0.36 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.poly.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.poly.pp.0.c.err.log 
+Command         ap_eval done; 0.193 sec.
+Command       tidy_31 done; 0.603 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.347 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.bc
+Command       clang done; 2.164 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/polyvec.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/polyvec.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/polyvec.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/polyvec.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/polyvec.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c
+Command       clang done; 2.015 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.301 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.011 sec.
+INFO-FLOW: Done: GCC PP time: 4.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.297 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.308 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.polyvec.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.polyvec.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.polyvec.pp.0.c.err.log 
+Command       ap_eval done; 0.215 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.polyvec.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.polyvec.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.polyvec.pp.0.c.err.log 
+Command         ap_eval done; 0.316 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.polyvec.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.polyvec.pp.0.c.err.log 
+Command         ap_eval done; 0.162 sec.
+Command       tidy_31 done; 0.515 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.275 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.bc
+Command       clang done; 2.072 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/randombytes.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/randombytes.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/randombytes.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/randombytes.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/randombytes.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c
+Command       clang done; 2.4 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.675 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.983 sec.
+INFO-FLOW: Done: GCC PP time: 5.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.595 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.649 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.randombytes.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.randombytes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.randombytes.pp.0.c.err.log 
+Command       ap_eval done; 0.643 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.randombytes.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.randombytes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.randombytes.pp.0.c.err.log 
+Command         ap_eval done; 0.761 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.randombytes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.randombytes.pp.0.c.err.log 
+Command         ap_eval done; 0.378 sec.
+Command       tidy_31 done; 1.212 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.654 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.bc
+Command       clang done; 2.299 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/reduce.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/reduce.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/reduce.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/reduce.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/reduce.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c
+Command       clang done; 1.826 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.255 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.975 sec.
+INFO-FLOW: Done: GCC PP time: 4.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.296 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.297 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.reduce.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.reduce.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.reduce.pp.0.c.err.log 
+Command       ap_eval done; 0.179 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.reduce.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.reduce.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.reduce.pp.0.c.err.log 
+Command         ap_eval done; 0.316 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.reduce.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.reduce.pp.0.c.err.log 
+Command         ap_eval done; 0.176 sec.
+Command       tidy_31 done; 0.503 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.308 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.bc
+Command       clang done; 1.922 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/rng.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/rng.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Command       ap_part_info done; 0.152 sec.
+Execute       is_encrypted dilithium3/rng.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/rng.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/rng.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c
+Command       clang done; 2.12 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.323 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.917 sec.
+INFO-FLOW: Done: GCC PP time: 4.4 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.334 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.335 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rng.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rng.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rng.pp.0.c.err.log 
+Command       ap_eval done; 0.186 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rng.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rng.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rng.pp.0.c.err.log 
+Command         ap_eval done; 0.224 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.rng.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.rng.pp.0.c.err.log 
+Command         ap_eval done; 0.166 sec.
+Command       tidy_31 done; 0.408 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.9 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.33 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.bc
+Command       clang done; 2.208 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/rounding.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/rounding.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/rounding.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/rounding.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/rounding.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c
+Command       clang done; 2.082 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.305 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.935 sec.
+INFO-FLOW: Done: GCC PP time: 4.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.287 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.304 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rounding.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rounding.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.rounding.pp.0.c.err.log 
+Command       ap_eval done; 0.203 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rounding.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rounding.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.rounding.pp.0.c.err.log 
+Command         ap_eval done; 0.255 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.rounding.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.rounding.pp.0.c.err.log 
+Command         ap_eval done; 0.15 sec.
+Command       tidy_31 done; 0.413 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.9 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.314 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.bc
+Command       clang done; 2.065 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/sign.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/sign.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/sign.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/sign.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/sign.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c
+Command       clang done; 2.088 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.321 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.922 sec.
+INFO-FLOW: Done: GCC PP time: 4.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.31 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.314 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.sign.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.sign.pp.0.c.err.log 
+Command       ap_eval done; 0.224 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.sign.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.sign.pp.0.c.err.log 
+Command         ap_eval done; 0.272 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.sign.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.sign.pp.0.c.err.log 
+Command         ap_eval done; 0.183 sec.
+Command       tidy_31 done; 0.464 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.329 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.bc
+Command       clang done; 2.104 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/symmetric-aes.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/symmetric-aes.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/symmetric-aes.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/symmetric-aes.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/symmetric-aes.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c
+Command       clang done; 1.845 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.306 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 2.106 sec.
+INFO-FLOW: Done: GCC PP time: 4.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.308 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.298 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-aes.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-aes.pp.0.c.err.log 
+Command       ap_eval done; 0.209 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-aes.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-aes.pp.0.c.err.log 
+Command         ap_eval done; 0.327 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.symmetric-aes.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.symmetric-aes.pp.0.c.err.log 
+Command         ap_eval done; 0.152 sec.
+Command       tidy_31 done; 0.501 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.295 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.bc
+Command       clang done; 2.046 sec.
+INFO: [HLS 200-10] Analyzing design file 'dilithium3/symmetric-shake.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dilithium3/symmetric-shake.c as C
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+Execute       is_encrypted dilithium3/symmetric-shake.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "dilithium3/symmetric-shake.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E dilithium3/symmetric-shake.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c
+Command       clang done; 1.97 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.304 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c"  -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.833 sec.
+INFO-FLOW: Done: GCC PP time: 4.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.297 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c std=gnu89 -directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.297 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-shake.pp.0.c.diag.yml C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-shake.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-dataflow-lawyer.symmetric-shake.pp.0.c.err.log 
+Command       ap_eval done; 0.203 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-shake.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-shake.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/tidy-3.1.symmetric-shake.pp.0.c.err.log 
+Command         ap_eval done; 0.306 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.symmetric-shake.pp.0.c.out.log 2> C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/xilinx-legacy-rewriter.symmetric-shake.pp.0.c.err.log 
+Command         ap_eval done; 0.153 sec.
+Command       tidy_31 done; 0.477 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pragma.1.c std=gnu89 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.28 sec.
+Execute       ap_part_info -name xc7vx485t-ffg1157-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pragma.2.c  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.bc
+Command       clang done; 2.007 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/PQCgenKAT_sign.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/aes256ctr.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/fips202.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/ntt.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/packing.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/poly.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/polyvec.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/randombytes.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/reduce.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rounding.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/sign.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-aes.g.bc C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/symmetric-shake.g.bc -hls-opt -except-internalize crypto_sign_keypair -LD:/Xilinx/Vivado/2019.2/win64/lib -lhlsm -lhlsmc++ -o C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/a.g 
+INFO-FLOW: llvm-ld: error: Cannot link file 'C:/Users/Dell/Downloads/VLSI_MIDSEM/solution1/.autopilot/db/rng.g.bc': Linking globals named 'randombytes': symbol multiply defined!
+Command       llvm-ld done; error code: 2; 1.51 sec.
+Command     elaborate done; error code: 2; 128.389 sec.
+Command   csynth_design done; error code: 2; 128.401 sec.
+Command ap_source done; error code: 1; 132.986 sec.
+Execute cleanup_all 

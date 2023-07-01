@@ -1,0 +1,37 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test/cpucycles.c in debug mode
+   Compiling ../../../../test/speed.c in debug mode
+   Compiling ../../../../test/test_dilithium.c in debug mode
+   Compiling ../../../../test/test_mul.c in debug mode
+   Compiling ../../../../test/test_vectors.c in debug mode
+csim.mk:102: recipe for target 'obj/test_vectors.o' failed
+../../../../test/test_dilithium.c:7:0: warning: "MLEN" redefined
+ #define MLEN 59
+ 
+In file included from ../../../../test/test_dilithium.c:2:0:
+../../../../test/../api.h:7:0: note: this is the location of the previous definition
+ #define MLEN 3400
+ 
+In file included from ../../../../test/test_vectors.c:3:0:
+../../../../test/../sign.h:14:34: error: 'MLEN' undeclared here (not in a function)
+ int crypto_sign(unsigned char sm[MLEN + CRYPTO_BYTES],
+                                  ^~~~
+../../../../test/../sign.h:14:41: error: 'CRYPTO_BYTES' undeclared here (not in a function)
+ int crypto_sign(unsigned char sm[MLEN + CRYPTO_BYTES],
+                                         ^~~~~~~~~~~~
+../../../../test/../sign.h:18:40: error: 'CRYPTO_SECRETKEYBYTES' undeclared here (not in a function)
+                 const unsigned char sk[CRYPTO_SECRETKEYBYTES]);
+                                        ^~~~~~~~~~~~~~~~~~~~~
+../../../../test/../sign.h:21:38: error: 'MLEN' undeclared here (not in a function)
+ int crypto_sign_open(unsigned char m[MLEN],
+                                      ^~~~
+../../../../test/../sign.h:23:52: error: 'CRYPTO_BYTES' undeclared here (not in a function)
+                      const unsigned char sm[MLEN + CRYPTO_BYTES],
+                                                    ^~~~~~~~~~~~
+../../../../test/../sign.h:25:45: error: 'CRYPTO_PUBLICKEYBYTES' undeclared here (not in a function)
+                      const unsigned char pk[CRYPTO_PUBLICKEYBYTES]);
+                                             ^~~~~~~~~~~~~~~~~~~~~
+make: *** [obj/test_vectors.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

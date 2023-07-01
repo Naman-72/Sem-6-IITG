@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="aes.c" path="C:\Users\Dell\Downloads\aes.c"/>
+    <originFiles name="aes.c" path="C:\Users\Dell\Downloads\aes.c"/>
+    <originFiles name="fips202.c" path="C:\Users\Dell\Downloads\fips202.c"/>
+    <originFiles name="ntt.c" path="C:\Users\Dell\Downloads\ntt.c"/>
+    <originFiles name="packing.c" path="C:\Users\Dell\Downloads\packing.c"/>
+    <originFiles name="poly.c" path="C:\Users\Dell\Downloads\poly.c"/>
+    <originFiles name="polyvec.c" path="C:\Users\Dell\Downloads\polyvec.c"/>
+    <originFiles name="reduce.c" path="C:\Users\Dell\Downloads\reduce.c"/>
+    <originFiles name="rng.c" path="C:\Users\Dell\Downloads\rng.c"/>
+    <originFiles name="sign.c" path="C:\Users\Dell\Downloads\sign.c"/>
+  </source>
+  <testbench>
+    <originFiles name="cpucycles.c" path="C:\Users\Dell\Downloads\test\cpucycles.c"/>
+    <originFiles name="cpucycles.h" path="C:\Users\Dell\Downloads\test\cpucycles.h"/>
+    <originFiles name="speed.c" path="C:\Users\Dell\Downloads\test\speed.c"/>
+    <originFiles name="speed.h" path="C:\Users\Dell\Downloads\test\speed.h"/>
+    <originFiles name="test_dilithium.c" path="C:\Users\Dell\Downloads\test\test_dilithium.c"/>
+    <originFiles name="test_mul.c" path="C:\Users\Dell\Downloads\test\test_mul.c"/>
+    <originFiles name="test_vectors.c" path="C:\Users\Dell\Downloads\test\test_vectors.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
