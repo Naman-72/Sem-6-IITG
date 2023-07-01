@@ -1,0 +1,98 @@
+GAUSSIAN MIXTURE MODEL 
+ANY IMAGE CATEGORY : 
+FOREST : 0.42 BLUE DIMENSION
+SUNSET : 0.3
+CLOUD : 0.8
+
+NOW JUMBLE 
+AND MAKE HISTOGRAM 
+
+NOW MODEL BASED APPROACH TO SEPERATE
+NOW CHARACTER SPECIFIC CATEGORY 
+AND AVG THEM TOGETHER
+
+BUT SIMPLE AVG ASSUME EQUAL PROPORTION 
+BUT WHAT IF WEIGHTED 
+THAN 
+
+WE 'D WANT A WEIGHTED AVG 
+
+WE INTRODUCE CLUSTER RATE
+WEIGHT ASSOCIATED WITH EACH CLUSTER 
+AND SUM = 1
+
+NOW FOR EACH CLUSTER 
+WE HAVE CLUSTE SPECIFIC MEAN , VARIENCE 
+NOW ASSUME MULTIDIMENSION 
+
+
+MEAN VECTOR , COVARIENCE MATRIX 
+HIGHER DIMENSION : 
+WEIGHT DOESN'T CHANGE WITH DIMENSIONALLITY BUT NOW INSTEAD OF JUST MEAN AND VARIENCE 
+WE HAVE
+MEAN VEC
+COVARIENCE MATRIX
+SHAPE AND ORIENTATION
+
+
+WITHOUT OBSERVING IMAGE WHAT'S PROB OF IT FROM CLUSTER K 
+: WEIGHT OF K 
+
+WHAT IF WE KNOW ITS A CLOUD IMAGE 
+WHAT'S THE LIKELIHOOD OF RGB VECTOR ASSOCIATED WITH IMAGE
+SO CAME FROM Kth cluster In this case what we do : 
+we go to the dist of cloud images 
+xi : look at intensity
+
+
+
+
+GAUSSIAN MIXTURE MODEL
+LEN , WEIGHT
+
+RED : TUNA
+ORANGE : SALMON
+ASSUMES ALL CLASSES ARE DISTRIBUTED  : gaussian distribution
+HIGH DIMENSION : mu 
+instead of sigma : covarience matrix
+it tells shape of distribution 
+goal : try to find out best mu and sigma
+
+
+NORMAL DISTRIBUTION :
+BELL CURVE : 
+MEAN , VARIANCE  
+(stastics)
+mean , sigma : distribution : how spreadness 
+low sigma : compact
+high sigma : spread 
+
+
+gaussian mixture model 
+try to find 
+High level of Gaussian distribution model
+N(x| mu , Sigma )
+once we figure out parameter 
+
+how to pick best pi , mu , sigma
+P(X| pi , mu , sigma )
+we want to maximize 
+X  : N x Del 
+Del : vector : multidimension
+
+HOW WE DO :
+ALL DATA POINTS 
+NOW 
+PROB IF THAT POINT IN ALL CLASSES SUM UP
+BAYES THEOREM
+
+
+
+ENSEMBLE LEARNING :
+https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
+https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/
+
+
+DIMENSIONALLITY REDUCTION 
+https://towardsdatascience.com/11-dimensionality-reduction-techniques-you-should-know-in-2021-dcb9500d388b
+https://www.analyticsvidhya.com/blog/2015/07/dimension-reduction-methods/
